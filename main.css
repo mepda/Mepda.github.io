@@ -5,7 +5,7 @@ body{
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   display: block;
 }
 
@@ -22,8 +22,10 @@ body{
 
 .container-social{
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-bottom: 3%;
 }
 
 
@@ -137,7 +139,7 @@ body{
   .twitch, .gplus, .freecodecamp, .goodreads, .github, .wordpress, .steam, .slack {
     font-size: .9rem;
     display: inline-block;
-    width: 45%;
+    width: 30%;
     padding-top: 1%;
     text-transform: uppercase;
   }
@@ -258,7 +260,7 @@ body{
   .twitch, .gplus, .freecodecamp, .goodreads, .github, .wordpress, .steam, .slack {
     font-size: .9rem;
     display: inline-block;
-    width: 45%;
+    width: 30%;
     padding-top: 1%;
     text-transform: uppercase;
   }
@@ -288,7 +290,7 @@ body{
     flex-flow: nowrap row;
     justify-content: space-around;
     width: 90%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -307,6 +309,7 @@ body{
   }
 
   .container-social{
+    display: flex;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -322,14 +325,10 @@ body{
     margin-right: 2%;
     font-size: 1.9vw;
   }
-
-  .contact-hero, .portfolio-hero{
-    margin-right: 2%;
-  }
-
+/*
   .journal-hero, .respect-hero{
     margin-right: 1%;
-  }
+  } */
 
   .portfolio-hero::after{
     font-family: 'Comfortaa', sans-serif;
@@ -574,7 +573,7 @@ body{
   .twitch, .gplus, .freecodecamp, .goodreads, .github, .wordpress, .steam, .slack {
     font-size: .9rem;
     display: inline-block;
-    width: 45%;
+    width: 30%;
     padding-top: 1%;
     text-transform: uppercase;
   }
