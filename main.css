@@ -375,11 +375,12 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 100%;
+    margin-left: 4.5%;
+    width: 90%;
   }
   .portfolio-box{
-    margin-left: 5%;
-    margin-right: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
     width: 20vw;
     height: 200px;
     border: solid black 1px;
@@ -410,7 +411,7 @@ body{
   }
 
   .journal-box{
-    margin-right: 2%;
+    margin-right: 5%;
     width: 20vw;
     height: 200px;
     border: solid black 1px;
@@ -441,7 +442,7 @@ body{
     font-size: 1rem;
   }
   .respect-box{
-    margin-right: 2%;
+    margin-right: 5%;
     width: 20vw;
     height: 200px;
     border: solid black 1px;
@@ -472,7 +473,7 @@ body{
     font-size: 1rem;
   }
   .contact-box{
-    margin-right: 2%;
+    margin-right: 5%;
     width: 20vw;
     height: 200px;
     border: solid black 1px;
