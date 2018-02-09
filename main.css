@@ -287,7 +287,7 @@ body{
   .container-hero{
     display: flex;
     flex-flow: nowrap row;
-    justify-content: center;
+    justify-content: space-around;
     width: 90%;
     margin-top: 5%;
     margin-left: 5%;
@@ -320,7 +320,7 @@ body{
     text-transform: uppercase;
     margin-top: 3%;
     margin-left: 3%;
-    font-size: 1rem;
+    font-size: 1.9vw;
   }
 
   .contact-hero, .portfolio-hero{
@@ -338,7 +338,7 @@ body{
     width: 90%;
     content: "Some projects I worked on for learning different tech";
     text-transform: uppercase;
-    font-size: .2rem;
+    font-size: 1vw;
   }
 
   .journal-hero::after{
@@ -348,7 +348,7 @@ body{
     width: 90%;
     content: "Observations on and about my learning journey";
     text-transform: uppercase;
-    font-size: .2rem;
+    font-size: 1vw;
   }
 
   .respect-hero::after{
@@ -358,7 +358,7 @@ body{
     width: 90%;
     content: "Some resources for webdesign and walkthroughs";
     text-transform: uppercase;
-    font-size: .2rem;
+    font-size: 1vw;
   }
 
   .contact-hero::after{
@@ -368,7 +368,7 @@ body{
     width: 90%;
     content: "Email and let's talk";
     text-transform: uppercase;
-    font-size: .2rem;
+    font-size: 1vw;
   }
 /* Here starts the boxes for the big page */
   .container-info-big{
