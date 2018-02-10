@@ -279,7 +279,7 @@ body{
 
 
 
-@media(min-width: 675px) and (max-width: 1600px){
+@media(min-width: 675px){
   .container-hero #my-initials{
     float:left;
     margin-right: 4%;
