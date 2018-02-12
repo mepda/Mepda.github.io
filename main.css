@@ -4,6 +4,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,7 +17,6 @@ body{
   margin-right: auto;
   width: 100px;
   height: 100px;
-  overflow: visible;
 }
 
 #my-initials{
