@@ -1,0 +1,125 @@
+/* For Mobile */
+.name,
+.role,
+.job {
+  font-family: "Titillium Web", sans-serif;
+}
+
+#profile-pic {
+  width: 90%;
+}
+
+#korean-site {
+  width: 90%;
+}
+
+.name {
+  font-size: 8.5vw;
+  line-height: 4vw;
+}
+
+.role {
+  font-size: 5.5vw;
+  line-height: 0.5vw;
+}
+
+.job {
+  font-size: 3.5vw;
+  line-height: 0.5vw;
+}
+
+#intro {
+  height: 85vh;
+  width: 100%;
+  margin-bottom: 15%;
+  color: hsl(60, 22%, 4%);
+  padding-top: 10%;
+}
+
+#project1 {
+  font-family: "Open Sans", sans-serif;
+  height: 80vh;
+}
+
+#project1-desc-p2 h2,
+#project2-desc-p2 h2 {
+  font-size: 6.5vw;
+}
+
+#korean-site {
+  width: 100%;
+}
+
+#project1-desc-p2 h4,
+#project2-desc-p2 h4 {
+  font-size: 3.5vw;
+}
+
+#project1-icons {
+  margin-top: 5%;
+}
+
+.icons {
+  width: 100%;
+}
+
+#project2 {
+  height: 80vh;
+  margin-top: 3.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#project2-desc-p2 {
+  margin-bottom: 5%;
+}
+
+#contact {
+  height: 40vh;
+}
+/* For Desktop */
+@media (min-width: 750px) {
+  #profile-pic {
+    width: 30%;
+  }
+  #korean-site {
+    width: 100%;
+  }
+  #project1-desc-p1 {
+    padding-top: 5%;
+  }
+  .name {
+    font-size: 5.5vw;
+    line-height: 1.5vw;
+  }
+
+  .role {
+    font-size: 2.8vw;
+    line-height: 1vw;
+  }
+
+  .job {
+    font-size: 1.5vw;
+    line-height: 1vw;
+  }
+
+  #project1-desc-p2 h2,
+  #project2-desc-p2 h2 {
+    font-size: 3.5vw;
+  }
+
+  #project1-desc-p2 h4,
+  #project2-desc-p2 h4 {
+    font-size: 2vw;
+  }
+  .icons {
+    width: 70%;
+  }
+
+  #leetup-site {
+    margin-top: 5%;
+  }
+  #contact {
+    margin-top: 100%;
+    height: 20vh;
+  }
+}
