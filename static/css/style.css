@@ -78,11 +78,11 @@
   height: 20vh;
 }
 
-#toast-container {
+/* #toast-container {
   top: auto !important;
   right: auto !important;
   bottom: 5%;
-}
+} */
 
 /* For Desktop */
 @media (min-width: 750px) {
