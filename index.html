@@ -158,16 +158,19 @@
           <h5 class="text-grey darken-3">Let me know what you'd like to build, and I'll get back to you!</h5>
           <form method="POST" id="contact-form" action="https://formspree.io/bsadick@gmail.com">
             <div class="col s12 l7">
-              <input type="email" name="email" id="email-input" class="text validate" placeholder="Your email">
+
+              <input type="email" aria-label="enter your email address" name="email" id="email-input" class="text validate" placeholder="Your email">
             </div>
             <div class="col s12 l5">
-              <input type="text" name="name" id="name-input" class="text validate" placeholder="Your name">
+
+              <input type="text" aria-label="enter your name address" name="name" id="name-input" class="text validate" placeholder="Your name">
             </div>
             <div class="col s12 l10">
-              <textarea name="message" id="message-input" class="materialize-textarea" placeholder="Your message"></textarea>
+
+              <textarea name="message" aria-label="enter a message for me" id="message-input" class="materialize-textarea" placeholder="Your message"></textarea>
             </div>
             <div class="col s12 l2">
-              <button class="btn btn-submit btn-large" type="submit">Send</button>
+              <button class="btn btn-submit deep-orange darken-1 btn-large" type="submit">Send</button>
             </div>
           </form>
         </div>
