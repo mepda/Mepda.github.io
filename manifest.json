@@ -1,0 +1,9 @@
+{
+  "name": "Ben Sadick's Portfolio",
+  "short_name": "Ben Sadick",
+  "theme_color": "#e8eaf6",
+  "background_color": "#e8eaf6",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
