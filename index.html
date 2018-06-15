@@ -8,6 +8,7 @@
   <meta name="description" content="Portfolio Site for a Web/Mobile Developer">
   <meta name="keywords" content="Portfolio, Projects, Contact, Developer, Nodejs, Express, Mongo, Materialize, Frontend, Backend, Fullstack">
   <meta name="author" content="Ben Sadick">
+  <meta name="theme-color" content="#e8eaf6">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="favicon.png">
   <title>Ben Sadick's Github Page</title>
@@ -45,7 +46,8 @@
     <div class="container">
       <div class="row" id="intro">
         <div class="col s12 center-align">
-          <img src="static/imgs/ben1.JPG" class="img-responsive circle z-depth-3" alt="a pic of ben" id="profile-pic">
+          <img src="static/imgs/ben_1280.jpg" srcset="static/imgs/ben_800.jpg 1x, static/imgs/ben_1280.jpg 2x" class="img-responsive circle z-depth-3"
+            alt="a pic of ben" id="profile-pic">
         </div>
         <div class="col s12 center-align">
           <h3 class="name">
@@ -71,8 +73,8 @@
       <!-- TODO: Add responsive font sizing to project 1 -->
       <div id="project1" class="row grey lighten-3">
         <div id="project1-desc-p1" class="s12 col">
-          <img src="static/imgs/korean-site.png" alt="a snapshot of my Korean typing practice site" class="responsive-img" id="korean-site"
-            srcset="">
+          <img src="static/imgs/korean_site_1280.png" srcset="static/imgs/korean_site_800.png 1x, static/imgs/korean_site_1280.png 2x"
+            alt="a snapshot of my Korean typing practice site" class="responsive-img" id="korean-site" srcset="">
         </div>
         <div id="project1-desc-p2" class="s12 col center-align">
           <h2>
@@ -109,7 +111,8 @@
       <!-- Project 2 Start-->
       <div id="project2" class="row gray darken-3 center-align">
         <div id="project2-desc-p1" class="s12 col">
-          <img src="static/imgs/leetup.png" alt="a snapshot of typing practice site" class="responsive-img" id="leetup-site" srcset="">
+          <img src="static/imgs/leetup_1280.png" srcset="static/imgs/leetup_800.png 1x, static/imgs/leetup_1280.png 2x" alt="a snapshot of typing practice site"
+            class="responsive-img" id="leetup-site" srcset="">
         </div>
         <div class="col s12 center-align" id="project2-desc-p2">
           <h2>
@@ -158,6 +161,16 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="static/js/script.js"></script>
+  <!-- Add a service worker for caching/routing-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log("Sw has been registered and is ready to rock"))
+        .catch(err => console.log(err));
+    } else {
+      console.log("SW not supported")
+    }
+  </script>
 </body>
 
 </html>
