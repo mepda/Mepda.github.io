@@ -5,7 +5,7 @@ importScripts(
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
   workbox.routing.registerRoute(
-    new RegExp(".*.(?:js|css)"),
+    new RegExp(".*.(?:js|css|png|jpg)"),
     workbox.strategies.cacheFirst()
   );
 
