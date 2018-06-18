@@ -30,16 +30,16 @@
         <div class="nav-wrapper blue darken-3 ">
           <ul class="center ">
             <li>
-              <a href="#intro">Top</a>
+              <a id="introLink" href="#intro">Top</a>
             </li>
             <li>
-              <a href="#project1">Project 1</a>
+              <a id="projectOneLink" href="#pro1">Project 1</a>
             </li>
             <li>
-              <a href="#project2-desc-p1">Project 2</a>
+              <a id="projectTwoLink" href="#pro2">Project 2</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a id="contactLink" href="#bottom">Contact</a>
             </li>
           </ul>
         </div>
@@ -74,23 +74,28 @@
       <!-- TODO: Add a listener that adds the valign-wrapper class if screen
                      size is more than 800 or so px, and removes it otherwise -->
       <!-- TODO: Add responsive font sizing to project 1 -->
-      <div id="project1" class="row grey lighten-3">
-        <div id="project1-desc-p1" class="s12 col">
-          <img src="static/imgs/korean_site_1280.png" srcset="static/imgs/korean_site_800.png 1x, static/imgs/korean_site_1280.png 2x"
-            alt="a snapshot of my Korean typing practice site" class="responsive-img" id="korean-site" srcset="">
+      <a class="anchor" id="pro1"></a>
+      <div id="project1" class=" center-align">
+        <div class="row">
+          <div id="project1-desc-p1" class="s12 l8 col">
+            <img src="static/imgs/korean_site_1280.png" srcset="static/imgs/korean_site_800.png 1x, static/imgs/korean_site_1280.png 2x"
+              alt="a snapshot of my Korean typing practice site" class="responsive-img" id="korean-site" srcset="">
+          </div>
+          <div id="project1-desc-p2" class="s12 l4 col center-align">
+            <h2>
+              Korean typing practice app.
+            </h2>
+            <h4>
+              Aimed at helping people learn how to type Korean with some basic words and phrases. Implements a simple leaderboard that
+              persists until the app is spun down. Currenlty not supported on Safari.
+            </h4>
+            <!-- <h6>
+              Technology: Bootstrap 4, Express, Node JS, Handlebars, Heroku
+            </h6> -->
+          </div>
         </div>
-        <div id="project1-desc-p2" class="s12 col center-align">
-          <h2>
-            Korean typing practice app.
-          </h2>
-          <h4>
-            Aimed at helping people learn how to type Korean with some basic words and phrases. Implements a simple leaderboard that
-            persists until the app is spun down. Currenlty not supported on Safari.
-          </h4>
-          <h6>
-            Technology: Bootstrap 4, Express, Node JS, Handlebars, Heroku
-          </h6>
-          <div id="project1-icons" class="row">
+        <div id="project1-icons" class="row center-align">
+          <div class="icon-container">
             <div class="col s2 offset-s1">
               <img src="static/imgs/bootstrap.png" alt="icon showing bootstrap" class="icons">
             </div>
@@ -107,73 +112,76 @@
               <img src="static/imgs/heroku-1.png" alt="icon showing heroku" class="icons">
             </div>
           </div>
-          <a href="https://mighty-waters-97772.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3">Practice Typing 핟굴</a>
         </div>
+        <a href="https://mighty-waters-97772.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3">Practice Typing 핟굴</a>
       </div>
 
+      <a class="anchor" id="pro2"></a>
       <!-- Project 2 Start-->
-      <div id="project2" class="row gray darken-3 center-align">
-        <div id="project2-desc-p1" class="s12 col">
-          <img src="static/imgs/leetup_1280.png" srcset="static/imgs/leetup_800.png 1x, static/imgs/leetup_1280.png 2x" alt="a snapshot of typing practice site"
-            class="responsive-img" id="leetup-site" srcset="">
-        </div>
-        <div class="col s12 center-align" id="project2-desc-p2">
-          <h2>
-            Meetup Clone "LeetUp"
-          </h2>
-          <h4>
-            Team leader part of Chingu cohort #5. For this project I was responsible for making a JSON API using restful routings. Linked
-            the back to the front, and have connected a test database using Mongo/Mongoose to our app. Currently this project
-            is ongoing.
-          </h4>
-          <h6>
-            Technology: Node, Express, Mongo, Mongoose, Materializecss, React
-          </h6>
+      <div id="project2" class=" center-align">
+        <div class="row">
+          <div id="project2-desc-p1" class="s12 l8 col push-l4">
+            <img src="static/imgs/leetup_1280.png" srcset="static/imgs/leetup_800.png 1x, static/imgs/leetup_1280.png 2x" alt="a snapshot of typing practice site"
+              class="responsive-img" id="leetup-site" srcset="">
+          </div>
+          <div class="col s12 l4 center-align pull-l8" id="project2-desc-p2">
+            <h2>
+              Meetup Clone "LeetUp"
+            </h2>
+            <h4>
+              Team leader of Chingu cohort #5. For this project I was wrote a restful JSON API. Linked the back to the front, and have
+              connected a test database using Mongo/Mongoose to our app. Currently this project is ongoing.
+            </h4>
+            <!-- <h6>
+              Technology: Node, Express, Mongo, Mongoose, Materializecss, React
+            </h6> -->
+          </div>
         </div>
         <div id="project2-icons" class="row center-align">
-          <div class="col s2 offset-s1">
-            <img src="static/imgs/nodejs.png" alt="icon showing bootstrap" class="icons">
-          </div>
-          <div class="col s2">
-            <img src="static/imgs/express.png" alt="icon showing express.js" class="icons">
-          </div>
-          <div class="col s2">
-            <img src="static/imgs/mongo.png" alt="icon showing node.js" class="icons">
-          </div>
-          <div class="col s2">
-            <img src="static/imgs/materializecss.png" alt="icon showing heroku" class="icons">
-          </div>
-          <div class="col s2">
-            <img src="static/imgs/react.png" alt="icon showing heroku" class="icons">
+          <div class="icon-container">
+            <div class="col s2 offset-s1">
+              <img src="static/imgs/nodejs.png" alt="icon showing bootstrap" class="icons">
+            </div>
+            <div class="col s2">
+              <img src="static/imgs/express.png" alt="icon showing express.js" class="icons">
+            </div>
+            <div class="col s2">
+              <img src="static/imgs/mongo.png" alt="icon showing node.js" class="icons">
+            </div>
+            <div class="col s2">
+              <img src="static/imgs/materializecss.png" alt="icon showing heroku" class="icons">
+            </div>
+            <div class="col s2">
+              <img src="static/imgs/react.png" alt="icon showing heroku" class="icons">
+            </div>
           </div>
         </div>
-        <a href="https://mighty-waters-97772.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3">Projects Github</a>
-        <!-- <div class="col s12 center-align hide-on-med-and-down">
-          <h5 class="btn btn-large ">Available starting 2019</h5>
-        </div>
-        <div class="col s12 center-align hide-on-med-and-up">
-          <h5 class="btn btn-large " onclick="M.toast({html: 'Nice!'})">Available starting 2019</h5>
-        </div> -->
-        <div id="contact" class="input-field row">
-          <h5 class="text-grey darken-3">Let me know what you'd like to build, and I'll get back to you!</h5>
-          <form method="POST" id="contact-form" action="https://formspree.io/bsadick@gmail.com">
-            <div class="col s12 l7">
+        <a href="https://mighty-waters-97772.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3 ">Leetup's Github</a>
+      </div>
+    </div>
 
-              <input type="email" aria-label="enter your email address" name="email" id="email-input" class="text validate" placeholder="Your email">
-            </div>
-            <div class="col s12 l5">
+    <!-- Contact Section Start-->
+    <a class="anchor" id="bottom"></a>
+    <div class="container">
+      <div id="contact" class="input-field row center-align">
+        <h5 class="text-grey darken-3 s12">Let me know what you'd like to build, and I'll get back to you!</h5>
+        <form method="POST" id="contact-form" action="https://formspree.io/bsadick@gmail.com">
+          <div class="col s12 l7">
 
-              <input type="text" aria-label="enter your name address" name="name" id="name-input" class="text validate" placeholder="Your name">
-            </div>
-            <div class="col s12 l10">
+            <input type="email" aria-label="enter your email address" name="email" id="email-input" class="text validate" placeholder="Your email">
+          </div>
+          <div class="col s12 l5">
 
-              <textarea name="message" aria-label="enter a message for me" id="message-input" class="materialize-textarea" placeholder="Your message"></textarea>
-            </div>
-            <div class="col s12 l2">
-              <button class="btn btn-submit deep-orange darken-1 btn-large" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
+            <input type="text" aria-label="enter your name address" name="name" id="name-input" class="text validate" placeholder="Your name">
+          </div>
+          <div class="col s12 l10">
+
+            <textarea name="message" aria-label="enter a message for me" id="message-input" class="materialize-textarea" placeholder="Your message"></textarea>
+          </div>
+          <div class="col s12 l2">
+            <button class="btn btn-submit deep-orange darken-1 btn-large" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -191,11 +199,11 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.11.1/css/themes/bootstrap.min.css" integrity="sha256-SRrWsl8I440Y4yoUicHFwW7SB0irMPnd+9I1okWN7YQ="
     crossorigin="anonymous" />
-  <!-- custom script for testing / debugging / initializing -->
-  <script src="static/js/script.js"></script>
+
   <!-- Add a service worker for caching/routing-->
   <script>
     if ('serviceWorker' in navigator) {
+
       navigator.serviceWorker.register('/service-worker.js')
         .then(reg => console.log("Sw has been registered and is ready to rock"))
         .catch(err => console.log(err));
@@ -203,6 +211,8 @@
       console.log("SW not supported")
     }
   </script>
+  <!-- custom script for testing / debugging / initializing -->
+  <script src="static/js/script.js"></script>
 </body>
 
 </html>

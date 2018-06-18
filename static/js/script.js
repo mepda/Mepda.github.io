@@ -1,7 +1,3 @@
-// M.toast({ html: "Nice!" });
-
-// $(".scrollspy").scrollSpy();
-
 $("#contact-form").submit(function(e) {
   let email = document.getElementById("email-input");
   let name = document.getElementById("name-input");
@@ -25,3 +21,35 @@ $("#contact-form").submit(function(e) {
     alertify.success("Message sent");
   }
 });
+
+//get top position of various sections
+
+// let projectOnePosition = document
+//   .getElementById("project1")
+//   .getBoundingClientRect().top;
+// let projectTwoPosition = document
+//   .getElementById("project2")
+//   .getBoundingClientRect().top;
+// let contactPosition = document.getElementById("contact").getBoundingClientRect()
+//   .top;
+
+// //get links by id
+// let projectOneLink = document.getElementById("projectOneLink");
+// let projectTwoLink = document.getElementById("projectTwoLink");
+// let contactLink = document.getElementById("contactLink");
+
+// //adjust for navbar offset
+// projectOneLink.addEventListener("click", e => {
+//   console.log(projectOnePosition);
+//   e.preventDefault();
+//   window.scrollTo(0, projectOnePosition - 300);
+// });
+
+// $("#projectOneLink").click(function() {
+//   $("html, body").animate(
+//     {
+//       scrollTop: $("#project1").offset().top
+//     },
+//     2000
+//   );
+// });
