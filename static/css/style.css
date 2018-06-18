@@ -88,9 +88,14 @@
 }
 
 /* For tablet */
-@media (min-width: 450px) and (max-width: 899px) {
-  #intro {
+@media (min-width: 450px) and (max-width: 1000px) {
+  .intro,
+  .project1,
+  .project2,
+  .project3 {
     height: 100vh;
+  }
+  #intro {
     width: 100%;
     color: hsl(60, 22%, 4%);
     padding-top: 5%;
