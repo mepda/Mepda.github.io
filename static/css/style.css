@@ -87,8 +87,66 @@
   height: 20vh;
 }
 
+/* For tablet */
+@media (min-width: 450px) and (max-width: 899px) {
+  #intro {
+    height: 100vh;
+    width: 100%;
+    color: hsl(60, 22%, 4%);
+    padding-top: 5%;
+  }
+
+  #profile-pic {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 7vw;
+    line-height: 4vw;
+  }
+
+  .role {
+    font-size: 5vw;
+    line-height: 1vw;
+  }
+
+  .job {
+    font-size: 3vw;
+    line-height: 1vw;
+  }
+
+  a.anchor #bottom {
+    top: -30vh;
+    position: relative;
+    display: block;
+    visibility: hidden;
+  }
+  #contact {
+    padding-top: 20%;
+    height: 70vh;
+    margin-bottom: 20%;
+  }
+  #project3,
+  #project2,
+  #project1 {
+    margin-bottom: 45%;
+  }
+  #project1-desc-p2 h2,
+  #project2-desc-p2 h2,
+  #project3-desc-p2 h2 {
+    font-size: 6vw;
+    font-family: "Anton";
+  }
+
+  #project1-desc-p2 h4,
+  #project2-desc-p2 h4,
+  #project3-desc-p2 h4 {
+    font-size: 3vw;
+  }
+}
+
 /* For Desktop */
-@media (min-width: 750px) {
+@media (min-width: 900px) {
   /* For smooth scrolling */
   .intro,
   .project1,
@@ -181,63 +239,5 @@
     margin-top: 10%;
     height: 60vh;
     margin-bottom: 15%;
-  }
-}
-
-/* For tablet */
-@media (min-width: 750px) and (max-width: 990px) {
-  #intro {
-    height: 100vh;
-    width: 100%;
-    color: hsl(60, 22%, 4%);
-    padding-top: 5%;
-  }
-
-  #profile-pic {
-    width: 50%;
-  }
-
-  .name {
-    font-size: 7vw;
-    line-height: 4vw;
-  }
-
-  .role {
-    font-size: 5vw;
-    line-height: 1vw;
-  }
-
-  .job {
-    font-size: 3vw;
-    line-height: 1vw;
-  }
-
-  a.anchor #bottom {
-    top: -30vh;
-    position: relative;
-    display: block;
-    visibility: hidden;
-  }
-  #contact {
-    padding-top: 20%;
-    height: 70vh;
-    margin-bottom: 20%;
-  }
-  #project3,
-  #project2,
-  #project1 {
-    margin-bottom: 35%;
-  }
-  #project1-desc-p2 h2,
-  #project2-desc-p2 h2,
-  #project3-desc-p2 h2 {
-    font-size: 6vw;
-    font-family: "Anton";
-  }
-
-  #project1-desc-p2 h4,
-  #project2-desc-p2 h4,
-  #project3-desc-p2 h4 {
-    font-size: 3vw;
   }
 }
