@@ -22,6 +22,11 @@ $("#contact-form").submit(function(e) {
   }
 });
 
+$(".materialboxed").materialbox({
+  inDuration: 400,
+  ourDuration: 400
+});
+
 //get top position of various sections
 
 // let projectOnePosition = document
