@@ -5,6 +5,7 @@
 .name,
 .role,
 .job {
+  line-height: 6vw;
   font-family: 'Titillium Web', sans-serif;
 }
 *:focus {
@@ -19,13 +20,13 @@ nav ul a {
 }
 
 h5.project-header {
-  font-size: 4vw;
+  font-size: 4.5vw;
   font-family: 'Open sans';
 }
 
 .fab,
 .far {
-  font-size: 4vw !important;
+  font-size: 5vw !important;
 }
 
 a.anchor #projects {
@@ -55,17 +56,14 @@ a.anchor #projects {
 
 .name {
   font-size: 8.5vw;
-  line-height: 4vw;
 }
 
 .role {
   font-size: 5.5vw;
-  line-height: 0.5vw;
 }
 
 .job {
   font-size: 3.5vw;
-  line-height: 0.5vw;
 }
 
 #intro {
@@ -114,8 +112,17 @@ a.anchor #projects {
 }
 
 #contact {
+  font-size: 3.5vw;
   margin-top: 15%;
   height: 20vh;
+}
+
+#contact h5 {
+  font-size: 4.5vw;
+}
+
+.footer-copyright {
+  height: 10vh;
 }
 
 /* For tablet */
@@ -138,17 +145,14 @@ a.anchor #projects {
 
   .name {
     font-size: 7vw;
-    line-height: 4vw;
   }
 
   .role {
     font-size: 5vw;
-    line-height: 1vw;
   }
 
   .job {
     font-size: 3vw;
-    line-height: 1vw;
   }
   a.anchor #projects {
     top: -30vh;
@@ -221,17 +225,17 @@ a.anchor #projects {
 
   .name {
     font-size: 5.5vw;
-    line-height: 1.5vw;
+    line-height: 2vw;
   }
 
   .role {
     font-size: 2.8vw;
-    line-height: 1vw;
+    line-height: 2vw;
   }
 
   .job {
     font-size: 1.5vw;
-    line-height: 1vw;
+    line-height: 2vw;
   }
 
   #project1-desc-p2 h2,
