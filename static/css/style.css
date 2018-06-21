@@ -1,9 +1,11 @@
 /* For Mobile */
-
+.clickable {
+  cursor: url('../imgs/click.png'), auto;
+}
 .name,
 .role,
 .job {
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #profile-pic {
@@ -11,6 +13,22 @@
 }
 #project1 {
   padding-bottom: 10%;
+}
+
+.project-header {
+  font-size: 3vw;
+}
+
+.fab,
+.far {
+  font-size: 4vw !important;
+}
+
+a.anchor #projects {
+  top: -30vh;
+  position: relative;
+  display: block;
+  visibility: hidden;
 }
 
 #korean-site {
@@ -49,7 +67,7 @@
 }
 
 #project1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   height: 100vh;
 }
 
@@ -57,7 +75,7 @@
 #project2-desc-p2 h2,
 #project3-desc-p2 h2 {
   font-size: 6.5vw;
-  font-family: "Anton";
+  font-family: 'Anton';
 }
 
 #korean-site {
@@ -82,7 +100,7 @@
 #project3 {
   height: 100vh;
   margin-top: 3.5%;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #project2-desc-p2 {
@@ -126,13 +144,13 @@
     font-size: 3vw;
     line-height: 1vw;
   }
-
-  a.anchor #bottom {
+  a.anchor #projects {
     top: -30vh;
     position: relative;
     display: block;
     visibility: hidden;
   }
+
   #contact {
     padding-top: 20%;
     height: 70vh;
@@ -147,7 +165,7 @@
   #project2-desc-p2 h2,
   #project3-desc-p2 h2 {
     font-size: 6vw;
-    font-family: "Anton";
+    font-family: 'Anton';
   }
 
   #project1-desc-p2 h4,
@@ -176,20 +194,6 @@
 
   a.anchor {
     top: -9vh;
-    position: relative;
-    display: block;
-    visibility: hidden;
-  }
-
-  a.anchor#pro1 {
-    top: -13vh;
-    position: relative;
-    display: block;
-    visibility: hidden;
-  }
-
-  a.anchor #bottom {
-    top: -10vh;
     position: relative;
     display: block;
     visibility: hidden;

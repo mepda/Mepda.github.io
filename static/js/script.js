@@ -1,31 +1,33 @@
-$("#contact-form").submit(function(e) {
-  let email = document.getElementById("email-input");
-  let name = document.getElementById("name-input");
-  let message = document.getElementById("message-input");
+$('#contact-form').submit(function(e) {
+  let email = document.getElementById('email-input');
+  let name = document.getElementById('name-input');
+  let message = document.getElementById('message-input');
   let data = { email, name, message };
   console.log(data);
   if (!name.value || !email.value || !message.value) {
-    alertify.error("Please check your entries");
+    alertify.error('Please check your entries');
   } else {
     $.ajax({
-      url: "https://formspree.io/bsadick@gmail.com",
-      method: "POST",
+      url: 'https://formspree.io/bsadick@gmail.com',
+      method: 'POST',
       data: $(this).serialize(),
-      dataType: "json"
+      dataType: 'json'
     });
 
     e.preventDefault();
     $(this)
       .get(0)
       .reset();
-    alertify.success("Message sent");
+    alertify.success('Message sent');
   }
 });
 
-$(".materialboxed").materialbox({
+$('.materialboxed').materialbox({
   inDuration: 400,
   ourDuration: 400
 });
+
+$('.collapsible').collapsible();
 
 //get top position of various sections
 
