@@ -1,6 +1,6 @@
 /* For Mobile */
 .clickable {
-  cursor: url('../imgs/click.png'), auto;
+  cursor: url('../imgs/mouse.png'), auto;
 }
 .name,
 .role,
@@ -8,15 +8,17 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+nav ul a {
+  font-size: 2.5vw;
+}
+
 #profile-pic {
   width: 90%;
 }
-#project1 {
-  padding-bottom: 10%;
-}
 
-.project-header {
-  font-size: 3vw;
+h5.project-header {
+  font-size: 4vw;
+  font-family: 'Open sans';
 }
 
 .fab,
@@ -29,6 +31,11 @@ a.anchor #projects {
   position: relative;
   display: block;
   visibility: hidden;
+}
+
+.recent-projects {
+}
+.icon-recent-projects {
 }
 
 #korean-site {
@@ -60,7 +67,7 @@ a.anchor #projects {
 }
 
 #intro {
-  height: 100vh;
+  height: 60vh;
   width: 100%;
   color: hsl(60, 22%, 4%);
   padding-top: 25%;
@@ -68,13 +75,12 @@ a.anchor #projects {
 
 #project1 {
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
 }
 
 #project1-desc-p2 h2,
 #project2-desc-p2 h2,
 #project3-desc-p2 h2 {
-  font-size: 6.5vw;
+  font-size: 9.5vw;
   font-family: 'Anton';
 }
 
@@ -85,7 +91,7 @@ a.anchor #projects {
 #project1-desc-p2 h4,
 #project2-desc-p2 h4,
 #project3-desc-p2 h4 {
-  font-size: 4vw;
+  font-size: 6vw;
 }
 
 #project1-icons {
@@ -98,8 +104,6 @@ a.anchor #projects {
 
 #project2,
 #project3 {
-  height: 100vh;
-  margin-top: 3.5%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -156,11 +160,11 @@ a.anchor #projects {
     height: 70vh;
     margin-bottom: 20%;
   }
-  #project3,
+  /* #project3,
   #project2,
   #project1 {
     margin-bottom: 45%;
-  }
+  } */
   #project1-desc-p2 h2,
   #project2-desc-p2 h2,
   #project3-desc-p2 h2 {
@@ -197,6 +201,9 @@ a.anchor #projects {
     position: relative;
     display: block;
     visibility: hidden;
+  }
+  *:focus {
+    outline: 0 !important;
   }
 
   #intro {
@@ -259,8 +266,6 @@ a.anchor #projects {
     overflow: hidden;
   }
   #contact {
-    margin-top: 10%;
-    height: 60vh;
     margin-bottom: 15%;
   }
 }
