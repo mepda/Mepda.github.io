@@ -24,18 +24,19 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/animate.css">
 </head>
 <!-- TODO Add styling for tablet-->
 
-<body class="indigo lighten-5">
+<body class="white">
   <div class="wrapper">
     <a class="anchor" id="top"></a>
     <div class="navbar-fixed hide-on-small-only">
       <nav>
-        <div class="nav-wrapper blue darken-3 ">
+        <div class="nav-wrapper indigo darken-1 ">
           <ul class="center ">
             <li>
-              <a id="introLink" href="#top">Me</a>
+              <a id="introLink" href="#top">Bio</a>
             </li>
             <!-- <li>
               <a id="bioLink" href="#bio">Bio</a>
@@ -78,18 +79,18 @@
       <div class="projects">
         <div class="row">
           <div class="col sm6 center-align">
-            <div class="project-header">
-
-              <h2>
-                <i class="fas fa-bars"></i>
+            <div>
+              <h3 class="recent-projects indigo-text darken-1">
+                <i id="icon-recent-projects" class="fas fa-angle-double-down animated infinite fadeInDown"></i>
                 Recent Projects
-              </h2>
+              </h3>
             </div>
           </div>
         </div>
         <ul class="collapsible">
-          <li class="active ">
-            <div class="collapsible-header waves-effect waves-teal waves-light clickable center-align">
+          <!-- li used to be class="acive"-->
+          <li>
+            <div class="collapsible-header waves-effect waves-white waves-light clickable center-align indigo darken-3 white-text">
               <div class="row">
                 <div class="col sm6 center-align">
                   <h5 class="project-header">
@@ -136,10 +137,10 @@
               </div>
           </li>
           <li>
-            <div class="collapsible-header clickable">
+            <div class="collapsible-header waves-effect waves-white waves-light clickable center-align indigo darken-3 white-text">
               <div class="row">
                 <div class="col sm6">
-                  <h5 class="project-header waves-effect waves-teal waves-light clickable">
+                  <h5 class="project-header">
                     Korean Typing App
                   </h5>
                 </div>
@@ -191,7 +192,7 @@
             </div>
           </li>
           <li>
-            <div class="collapsible-header waves-effect waves-teal waves-light clickable">
+            <div class="collapsible-header waves-effect waves-white waves-light clickable center-align indigo darken-3 white-text">
               <div class="row">
                 <div class="col sm6 center-align">
                   <h5 class="project-header">
@@ -375,7 +376,7 @@
               <textarea name="message" aria-label="enter a message for me" id="message-input" class="materialize-textarea" placeholder="Your message"></textarea>
             </div>
             <div class="col s12 m12 l2">
-              <button class="btn btn-submit deep-orange darken-1 btn-large" type="submit">Send</button>
+              <button class="btn btn-submit indigo accent-4 btn-large" type="submit">Send</button>
             </div>
           </form>
         </div>
@@ -399,7 +400,7 @@
       crossorigin="anonymous" />
 
     <!-- Add a service worker for caching/routing-->
-    <script>
+    <!-- <script>
       if ('serviceWorker' in navigator) {
 
         navigator.serviceWorker.register('/service-worker.js')
@@ -408,7 +409,7 @@
       } else {
         console.log("SW not supported")
       }
-    </script>
+    </script> -->
     <!-- custom script for testing / debugging / initializing -->
     <script src="static/js/script.js"></script>
 </body>
