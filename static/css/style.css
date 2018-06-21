@@ -7,7 +7,9 @@
 .job {
   font-family: 'Titillium Web', sans-serif;
 }
-
+*:focus {
+  outline: 0 !important;
+}
 nav ul a {
   font-size: 2.5vw;
 }
@@ -201,9 +203,6 @@ a.anchor #projects {
     position: relative;
     display: block;
     visibility: hidden;
-  }
-  *:focus {
-    outline: 0 !important;
   }
 
   #intro {
