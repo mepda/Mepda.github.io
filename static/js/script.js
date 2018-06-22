@@ -38,7 +38,9 @@ $('.collapsible').collapsible();
 const myAnimation = document.querySelector('#icon-recent-projects');
 observer = new IntersectionObserver((entry, observer) => {
   if (entry[0].intersectionRatio > 0) {
-    myAnimation.classList.add('fadeInDown');
+    setTimeout(() => {
+      myAnimation.classList.add('fadeInDown');
+    }, 60);
   } else {
     myAnimation.classList.remove('fadeInDown');
   }
@@ -50,8 +52,10 @@ observerHeader = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
       console.log(`entered view of ${entry}`);
-      entry.target.classList.add('animated-icons');
-      entry.target.classList.add('bounceIn');
+      setTimeout(() => {
+        entry.target.classList.add('animated-icons');
+        entry.target.classList.add('bounceIn');
+      }, 60);
     } else {
       entry.target.classList.remove('bounceIn');
     }
