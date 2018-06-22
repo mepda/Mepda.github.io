@@ -1,3 +1,9 @@
+console.log(
+  '%cWelcome to my %cportfolio.',
+  'color:blue; font-size:1.5em;',
+  'color:green; font-weight:bold; font-size:1.5em;'
+);
+
 $('#contact-form').submit(function(e) {
   let email = document.getElementById('email-input');
   let name = document.getElementById('name-input');
@@ -28,6 +34,33 @@ $('.materialboxed').materialbox({
 });
 
 $('.collapsible').collapsible();
+
+const myAnimation = document.querySelector('#icon-recent-projects');
+observer = new IntersectionObserver((entry, observer) => {
+  if (entry[0].intersectionRatio > 0) {
+    myAnimation.classList.add('fadeInDown');
+  } else {
+    myAnimation.classList.remove('fadeInDown');
+  }
+});
+observer.observe(myAnimation);
+
+const headerAnimation = document.querySelectorAll('.mycon');
+observerHeader = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      console.log(`entered view of ${entry}`);
+      entry.target.classList.add('animated-icons');
+      entry.target.classList.add('bounceIn');
+    } else {
+      entry.target.classList.remove('bounceIn');
+    }
+  });
+});
+
+headerAnimation.forEach(header => {
+  observerHeader.observe(header);
+});
 
 //get top position of various sections
 

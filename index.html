@@ -32,12 +32,16 @@
   <div class="wrapper">
     <a class="anchor" id="top"></a>
     <div class="navbar-fixed hide-on-small-only">
-      <nav>
-        <div class="nav-wrapper indigo darken-1 ">
-          <ul class="center ">
-            <li>
+      <nav class="indigo darken-1">
+        <div class="nav-wrapper">
+          <a href="#top" class="brand-logo">
+            <img class="circle img-responsive" src="static/imgs/ben-logo-2.png" width="80%" alt="a logo of the world with my name (Ben Sadick) in it">
+          </a>
+
+          <ul class="right">
+            <!-- <li>
               <a id="introLink" href="#top">Bio</a>
-            </li>
+            </li> -->
             <!-- <li>
               <a id="bioLink" href="#bio">Bio</a>
             </li> -->
@@ -70,7 +74,11 @@
         </div>
         <div class="col s12 center-align">
           <h5 class="job">
-            Focus on Web technologies such as Node.js, Express.js, Materialize, APIs, PWAs, MongoDB, Bots, and App perforance optimization
+            <div class="container">
+              Focus on Web technologies such as Node.js, Express.js, Materialize, APIs, PWAs, MongoDB, Bots, Cloud deployment, and App
+              perforance optimization
+            </div>
+
           </h5>
         </div>
       </div>
@@ -82,7 +90,7 @@
             <div>
               <a href="#projects">
                 <h3 class="recent-projects indigo-text darken-1">
-                  <i id="icon-recent-projects" class="fas fa-angle-double-down animated infinite fadeInDown"></i>
+                  <i id="icon-recent-projects" class="fas fa-angle-double-down animated"></i>
                   Project Portfolio
                 </h3>
               </a>
@@ -97,7 +105,7 @@
                 <div class="col sm6 center-align">
                   <h5 class="project-header">
                     Pollution Checking Slackbot
-                    <i class="fab project-header fa-slack"></i>
+                    <i id="slack" class="fab fa-slack mycon animated"></i>
                   </h5>
                 </div>
               </div>
@@ -111,6 +119,11 @@
                     <img src="static/imgs/slack.svg" alt="a picture of the slack logo" class="responsive-img " id="slack-logo" srcset="">
                     <img src="static/imgs/pollution-check-ex-boston.gif" alt="a gif of the pollution checking bot I made checking the pollution of Boston"
                       id="bot-example" class="materialboxed">
+                    <div class="caption center-align">
+                      <p class="light grey-text">
+                        GIF of Pollution Bot in action
+                      </p>
+                    </div>
                   </div>
                   <div id="project3-desc-p2" class="s12 m12 l4 col center-align">
                     <h2>
@@ -147,7 +160,7 @@
                   </h5>
                 </div>
                 <div class="col sm6">
-                  <i class="project-header far fa-keyboard"></i>
+                  <i class="project-header far mycon animated fa-keyboard"></i>
                 </div>
               </div>
             </div>
@@ -159,6 +172,11 @@
                   <div id="project1-desc-p1" class="s12 m12 l8 col">
                     <img src="static/imgs/korean_site_1280.png" srcset="static/imgs/korean_site_800.png 1x, static/imgs/korean_site_1280.png 2x"
                       alt="a snapshot of my Korean typing practice site" class="responsive-img materialboxed" id="korean-site">
+                    <div class="caption center-align">
+                      <p class="light grey-text">
+                        Screenshot of the Korean Typing app
+                      </p>
+                    </div>
                   </div>
                   <div id="project1-desc-p2" class="s12 m12 l4 col center-align">
                     <h2>
@@ -199,7 +217,7 @@
                 <div class="col sm6 center-align">
                   <h5 class="project-header">
                     Leetup (Chingu Voyage 5)
-                    <i class="fab fa-meetup"></i>
+                    <i class="fab mycon animated fa-meetup"></i>
                   </h5>
                 </div>
               </div>
@@ -210,6 +228,11 @@
                   <div id="project2-desc-p1" class="s12 m12 l8 col push-l4">
                     <img src="static/imgs/leetup_1280.png" srcset="static/imgs/leetup_800.png 1x, static/imgs/leetup_1280.png 2x" alt="a snapshot of leetup, a meetup clone"
                       class="responsive-img materialboxed" id="leetup-site">
+                    <div class="caption center-align">
+                      <p class="light grey-text">
+                        Screenshot of Leetup's Homepage
+                      </p>
+                    </div>
                   </div>
                   <div class="col s12 m12 l4 center-align pull-l8" id="project2-desc-p2">
                     <h2>
@@ -247,118 +270,7 @@
           </li>
         </ul>
         </div>
-        <!-- Project 1 Start-->
-        <!-- <a class="anchor" id="pro1"></a>
-      <div id="project1" class="center-align">
-        <div class="row">
-          <div id="project1-desc-p1" class="s12 m12 l8 col">
-            <img src="static/imgs/korean_site_1280.png" srcset="static/imgs/korean_site_800.png 1x, static/imgs/korean_site_1280.png 2x"
-              alt="a snapshot of my Korean typing practice site" class="responsive-img materialboxed" id="korean-site">
-          </div>
-          <div id="project1-desc-p2" class="s12 m12 l4 col center-align">
-            <h2>
-              Korean typing practice app.
-            </h2>
-            <h4>
-              Aimed at helping people learn how to type Korean with some basic words and phrases. Implements a simple leaderboard that
-              persists until the app is spun down. Currenlty not supported on Safari.
-            </h4>
-           </div>
-  </div>
-  <div id="project1-icons" class="row center-align">
-    <div class="icon-container">
-      <div class="col s2 offset-s1">
-        <img src="static/imgs/bootstrap.png" alt="icon showing bootstrap" class="icons">
       </div>
-      <div class="col s2">
-        <img src="static/imgs/express.png" alt="icon showing express.js" class="icons">
-      </div>
-      <div class="col s2">
-        <img src="static/imgs/nodejs.png" alt="icon showing node.js" class="icons">
-      </div>
-      <div class="col s2">
-        <img src="static/imgs/handlebars.png" alt="icon showing handlebars.js" class="icons">
-      </div>
-      <div class="col s2">
-        <img src="static/imgs/heroku-1.png" alt="icon showing heroku" class="icons">
-      </div>
-    </div>
-  </div>
-  <a href="https://mighty-waters-97772.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3">Practice Typing 핟굴</a>
-  </div> -->
-
-        <!-- <a class="anchor" id="pro2"></a> -->
-        <!-- Project 2 Start-->
-        <!-- <div id="project2" class="center-align">
-        <div class="row">
-          <div id="project2-desc-p1" class="s12 m12 l8 col push-l4">
-            <img src="static/imgs/leetup_1280.png" srcset="static/imgs/leetup_800.png 1x, static/imgs/leetup_1280.png 2x" alt="a snapshot of leetup, a meetup clone"
-              class="responsive-img materialboxed" id="leetup-site">
-          </div>
-          <div class="col s12 m12 l4 center-align pull-l8" id="project2-desc-p2">
-            <h2>
-              Meetup Clone "LeetUp"
-            </h2>
-            <h4>
-              Team leader of Chingu cohort #5. For this project I wrote a restful JSON API with protected routes and login functionality.
-              Linked the back to the front with backend connecting to a test database. Project currently ongoing (6-18).
-            </h4>
-          </div>
-        </div>
-        <div id="project2-icons" class="row center-align">
-          <div class="icon-container">
-            <div class="col s2 offset-s1">
-              <img src="static/imgs/nodejs.png" alt="icon showing bootstrap" class="icons">
-            </div>
-            <div class="col s2">
-              <img src="static/imgs/express.png" alt="icon showing express.js" class="icons">
-            </div>
-            <div class="col s2">
-              <img src="static/imgs/mongo.png" alt="icon showing node.js" class="icons">
-            </div>
-            <div class="col s2">
-              <img src="static/imgs/materializecss.png" alt="icon showing heroku" class="icons">
-            </div>
-            <div class="col s2">
-              <img src="static/imgs/react.png" alt="icon showing heroku" class="icons">
-            </div>
-          </div>
-        </div>
-        <a href="https://github.com/chingu-voyage5/Geckos-Team-43" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3 ">Leetup's Github</a>
-      </div> -->
-        <!-- Project 3 Start-->
-        <!-- <a class="anchor" id="pro3"></a>
-    <div id="project3" class=" center-align">
-      <div class="row">
-        <div id="project3-desc-p1" class="s12 m12 l8 col white">
-          <img src="static/imgs/slack.svg" alt="a picture of the slack logo" class="responsive-img " id="slack-logo" srcset="">
-          <img src="static/imgs/pollution-check-ex-boston.gif" alt="a gif of the pollution checking bot I made checking the pollution of Boston"
-            id="bot-example" class="materialboxed">
-        </div>
-        <div id="project3-desc-p2" class="s12 m12 l4 col center-align">
-          <h2>
-            Pollution Checking Bot
-          </h2>
-          <h4>
-            Air quality is important to me, and being on slack all the time I thought I'd make a bot that would tell me the pollution
-            levels outside quickly. Uses Axios and a public Air quality Index API for getting realtime data.
-          </h4>
-        </div>
-      </div>
-      <div id="project3-icons" class="row center-align">
-        <div class="icon-container">
-          <div class="col s2 offset-s4">
-            <img src="static/imgs/nodejs.png" alt="icon showing node.js" class="icons">
-          </div>
-          <div class="col s2">
-            <img src="static/imgs/heroku-1.png" alt="icon showing heroku" class="icons">
-          </div>
-        </div>
-      </div>
-      <a href="https://github.com/mepda/pollution-checker-bot" target="_blank" rel="noopener noreferrer" class="btn btn-large light-blue darken-3">Bot's Source Code</a>
-    </div> -->
-      </div>
-
       <!-- Contact Section Start-->
       <!-- <a class="anchor" id="bottom"></a> -->
       <div class="container">
@@ -394,7 +306,9 @@
       </div>
     </footer> -->
 
-
+    <!-- Polyfill intersection observer-->
+    <!-- Load the polyfill first. -->
+    <script src="static/js/intersection-observer.js"></script>
 
     <!-- Import jQuery before Materialize js-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
