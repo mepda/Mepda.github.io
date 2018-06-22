@@ -53,10 +53,13 @@ observerHeader = new IntersectionObserver(entries => {
     if (entry.intersectionRatio > 0) {
       console.log(`entered view of ${entry}`);
       setTimeout(() => {
+        console.log(entry.target.style.visibility);
+        entry.target.style.visibility = 'visible';
         entry.target.classList.add('animated-icons');
         entry.target.classList.add('bounceIn');
       }, 60);
     } else {
+      entry.target.style.visibility = 'hidden';
       entry.target.classList.remove('bounceIn');
     }
   });
