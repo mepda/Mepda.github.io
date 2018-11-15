@@ -1,3 +1,21 @@
+.header {
+  width: 100%;
+  padding: 2em;
+}
+
+#scrolld {
+  display: none;
+  visibility: hidden;
+  position: relative;
+}
+
+#nav-starter {
+  top: 70vh;
+  position: relative;
+  display: block;
+  visibility: hidden;
+}
+
 /* For Mobile */
 .nav-wrapper {
   margin: 0 5%;
@@ -20,7 +38,7 @@ nav ul a {
 }
 
 #profile-pic {
-  width: 90%;
+  width: 30%;
 }
 
 h5.project-header {
@@ -60,10 +78,12 @@ a.anchor #projects {
 
 .name {
   font-size: 8.5vw;
+  color: #fefefe;
 }
 
 .role {
   font-size: 5.5vw;
+  color: #fefefe;
 }
 
 .job {
@@ -144,7 +164,7 @@ a.anchor #projects {
   }
 
   #profile-pic {
-    width: 50%;
+    width: 20%;
   }
 
   .name {
@@ -200,7 +220,6 @@ a.anchor #projects {
   }
 
   .wrapper {
-    height: 100vh;
     width: 100%;
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -221,7 +240,7 @@ a.anchor #projects {
   }
 
   #profile-pic {
-    width: 30%;
+    width: 20%;
   }
   #korean-site {
     width: 100%;
