@@ -211,11 +211,16 @@ body{
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 768px){
     .fleurs{
         position: absolute;
-        top: 80% !important;
+        top: 85% !important;
+        overflow: hidden;
     } 
+    .fleur{
+        width: 5% !important;
+        margin: 0 10px;
+    }
     .resume{
         margin-top: 5% !important;
     }
