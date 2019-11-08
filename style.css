@@ -166,13 +166,13 @@ body{
 }
 
 .goldenCircle{
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
     background: goldenrod;
     transform: translate(-50%, -50%);
     top: 50%;
-  left: 50%;
+    left: 50%;
     position: absolute;
 }
 .resume{
@@ -210,6 +210,8 @@ body{
         font-size: 72px !important;
     }
 }
+
+
 
 @media only screen and (orientation: landscape) and (max-width: 768px){
     .fleurs{
@@ -253,14 +255,16 @@ body{
         padding: 0 1.1%;
     }
     .resume{
-        margin-top: 5% !important;
+        margin-top: 7% !important;
 
     }  
+
 }
 
 .fleurs{
     position: absolute;
     top: 93%;
+    overflow: hidden;
 }
 .fleur{
     width: 7%;
