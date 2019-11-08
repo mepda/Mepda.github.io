@@ -176,7 +176,7 @@ body{
     position: absolute;
 }
 .resume{
-    margin-top: 35%;
+    margin-top: 25%;
 }
 .resumeTop{
     color:#D2272F;
@@ -188,14 +188,46 @@ body{
     font-size: 52px;
     font-family: 'Source Serif Pro';
 } 
+@media(min-width: 768px){
+    .fleurs{
+        position: absolute;
+        top: 90% !important;
+    } 
+    .resume{
+        margin-top: 15% !important;
+    }
+    .mainName{
+        font-size: 82px !important;
+    }
+    .secondaryName {
+        font-size: 38px !important;
+    }
+    .resumeTop {
+        font-size: 68px !important;
+    }
+    .resumeBot {
+
+        font-size: 72px !important;
+    }
+}
+
 @media(min-width: 1200px){
     .fleurs{
         position: absolute;
-        top: 80% !important;
+        top: 85% !important;
     } 
+    .fleur{
+        width: 5% !important;
+        padding: 0 1.1%;
+    }
     .resume{
         margin-top: 5% !important;
+
     }
+   
+
+
+    
 }
 .fleurs{
     position: absolute;
