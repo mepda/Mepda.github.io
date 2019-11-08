@@ -211,6 +211,33 @@ body{
     }
 }
 
+@media only screen and (orientation: landscape) {
+    .fleurs{
+        position: absolute;
+        top: 80% !important;
+    } 
+    .resume{
+        margin-top: 5% !important;
+    }
+    .mainName{
+        font-size: 32px !important;
+    }
+    .secondaryName {
+        font-size: 16px !important;
+    }
+    .resumeTop {
+        font-size: 28px !important;
+    }
+    .resumeBot {
+        font-size: 32px !important;
+    }
+    .goldenCircle{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 40px !important;
+    }
+}
+
 @media(min-width: 1200px){
     .fleurs{
         position: absolute;
