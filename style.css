@@ -22,6 +22,60 @@ body{
         line-height: 46px !important;
     }
 }
+@media(min-width: 768px){
+
+    .mainName{
+        font-size: 32px !important;
+    }
+    .secondaryName {
+        font-size: 28px !important;
+    }
+    .resumeTop {
+        font-size: 28px !important;
+    }
+    .resumeBot {
+
+        font-size: 22px !important;
+    }
+    .goldenCircle{
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50px !important;
+    }
+    .fleur{
+        width: 4% !important;
+    }
+    .fleurs{
+        transform: translate(0, -150%) !important;
+    }
+}
+
+
+
+@media only screen and (orientation: landscape) and (max-width: 768px){
+
+    .fleur{
+        width: 5% !important;
+    }
+
+    .mainName{
+        font-size: 32px !important;
+    }
+    .secondaryName {
+        font-size: 16px !important;
+    }
+    .resumeTop {
+        font-size: 28px !important;
+    }
+    .resumeBot {
+        font-size: 32px !important;
+    }
+    .goldenCircle{
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 40px !important;
+    }
+}
 @media(min-width:800px){
     #name{
         font-family: "Lalezar";
@@ -29,7 +83,45 @@ body{
         line-height: 52px !important;
     }
 }
+@media(min-width: 850px){
+    .redMain, .whiteMain{
+        min-height: 400px !important;
+    }
 
+    .top{
+        min-height: 800px !important;
+    }
+    .mainName{
+        font-size: 82px !important;
+    }
+    .secondaryName {
+        font-size: 78px !important;
+    }
+    .resumeTop {
+        font-size: 68px !important;
+    }
+    .resumeBot {
+
+        font-size: 82px !important;
+    }
+    .goldenCircle{
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 75px !important;
+    }
+}
+
+@media(min-width: 1200px){
+    body{
+        display: flex;
+    }
+    .redLine, .whiteLine{
+        width: 50% !important;
+    }
+    .top{
+        width: 50% !important;
+    }
+}
 #name{
     font-family: "Lalezar";
     font-size:42px;
@@ -160,23 +252,30 @@ body{
 }
 
 .name{
-    position: absolute;
-    top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
     width: 100%;
+    height: 100%
 }
 
 .goldenCircle{
-    height: 160px;
-    width: 160px;
+    height: 150px;
+    width: 150px;
     border-radius: 80px;
     background: goldenrod;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    position: absolute;
+    transform: translate(0%, -50%);
+    margin: 0 auto;
+
 }
 .resume{
-    margin-top: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
 }
 .resumeTop{
     color:#D2272F;
@@ -188,83 +287,14 @@ body{
     font-size: 52px;
     font-family: 'Source Serif Pro';
 } 
-@media(min-width: 768px){
-    .fleurs{
-        position: absolute;
-        top: 90% !important;
-    } 
-    .resume{
-        margin-top: 15% !important;
-    }
-    .mainName{
-        font-size: 82px !important;
-    }
-    .secondaryName {
-        font-size: 38px !important;
-    }
-    .resumeTop {
-        font-size: 68px !important;
-    }
-    .resumeBot {
-
-        font-size: 72px !important;
-    }
-}
 
 
-
-@media only screen and (orientation: landscape) and (max-width: 768px){
-    .fleurs{
-        position: absolute;
-        top: 85% !important;
-        overflow: hidden;
-    } 
-    .fleur{
-        width: 5% !important;
-        margin: 0 10px;
-    }
-    .resume{
-        margin-top: 5% !important;
-    }
-    .mainName{
-        font-size: 32px !important;
-    }
-    .secondaryName {
-        font-size: 16px !important;
-    }
-    .resumeTop {
-        font-size: 28px !important;
-    }
-    .resumeBot {
-        font-size: 32px !important;
-    }
-    .goldenCircle{
-        width: 80px !important;
-        height: 80px !important;
-        border-radius: 40px !important;
-    }
-}
-
-@media(min-width: 1200px){
-    .fleurs{
-        position: absolute;
-        top: 85% !important;
-    } 
-    .fleur{
-        width: 5% !important;
-        padding: 0 1.1%;
-    }
-    .resume{
-        margin-top: 7% !important;
-
-    }  
-
-}
 
 .fleurs{
-    position: absolute;
-    top: 93%;
+    transform: translate(0, -170%);
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 .fleur{
     width: 7%;
