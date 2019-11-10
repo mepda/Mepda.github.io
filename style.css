@@ -55,12 +55,12 @@ body{
     .fleurs{
         transform: translateY(0rem) !important;
         position: absolute;
-        bottom: 13%;
+        bottom: 2%;
     }
     .redLine{
         transform: translateY(0rem) !important;
         position: absolute;
-        bottom: 12%;
+        bottom: 1%;
     }
 
 }
