@@ -22,34 +22,6 @@ body{
         line-height: 46px !important;
     }
 }
-@media(min-width: 768px){
-/* 
-    .mainName{
-        font-size: 32px !important;
-    }
-    .secondaryName {
-        font-size: 28px !important;
-    }
-    .resumeTop {
-        font-size: 28px !important;
-    }
-    .resumeBot {
-
-        font-size: 22px !important;
-    }
-    .goldenCircle{
-        width: 100px !important;
-        height: 100px !important;
-        border-radius: 50px !important;
-    }
-    .fleur{
-        width: 4% !important;
-        height: 4% !important;
-    } */
-    /* .fleurs{
-        transform: translate(0, -150%) !important;
-    } */
-}
 
 @media only screen and (orientation: portrait) and (max-width: 767px){
     .fleurs{
