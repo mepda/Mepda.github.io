@@ -281,7 +281,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-flow: column;
-
+    transform: translateY(-.5rem);
 }
 .resumeTop{
     color:#D2272F;
