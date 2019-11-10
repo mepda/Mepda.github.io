@@ -44,6 +44,7 @@ body{
     }
     .fleur{
         width: 4% !important;
+        height: 4% !important;
     }
     .fleurs{
         transform: translate(0, -150%) !important;
@@ -56,6 +57,7 @@ body{
 
     .fleur{
         width: 5% !important;
+        height: 5% !important;
     }
 
     .mainName{
@@ -298,4 +300,5 @@ body{
 }
 .fleur{
     width: 7%;
+    height: 7%;
 }
