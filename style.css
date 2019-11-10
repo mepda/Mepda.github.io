@@ -174,7 +174,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.fl{
+.focusAmount{
     display: flex;
     margin-top: -20px;
     justify-content: space-between;
@@ -231,12 +231,7 @@ body{
     height: 5px;
 }
 
-.redLine{
-    width: 100%;
-    background: #D2272F;;
-    height: 5px;
-    transform: translateY(-50px);
-}
+
 
 .whiteMain{
     height: 50vh;
@@ -291,15 +286,18 @@ body{
     font-family: 'Source Serif Pro';
 } 
 
-
+.redLine{
+    width: 100%;
+    background: #D2272F;;
+    height: 5px;
+    transform: translateY(-3.5rem);
+}
 
 .fleurs{
-
-
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    transform: translateY(-60px);
+    transform: translateY(-4rem);
 }
 .fleur{
     width: 7%;
