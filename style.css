@@ -23,7 +23,7 @@ body{
     }
 }
 @media(min-width: 768px){
-
+/* 
     .mainName{
         font-size: 32px !important;
     }
@@ -45,7 +45,7 @@ body{
     .fleur{
         width: 4% !important;
         height: 4% !important;
-    }
+    } */
     /* .fleurs{
         transform: translate(0, -150%) !important;
     } */
@@ -131,11 +131,18 @@ body{
 @media(min-width: 850px){
     body{
         display: flex;
-        align-items: center;
     }
- 
+    .container{
+        align-self: center;
+    }
     .top{
         width: 50% !important;
+    }
+    .redLine{
+        transform: translateY(-5.5rem) !important;    
+    }
+    .fleurs{
+        transform: translateY(-6rem) !important;    
     }
    
 }
