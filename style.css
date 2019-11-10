@@ -53,10 +53,14 @@ body{
 
 @media only screen and (orientation: portrait) and (max-width: 767px){
     .fleurs{
-        transform: translateY(-6rem) !important;
+        transform: translateY(0rem) !important;
+        position: absolute;
+        bottom: 10%;
     }
     .redLine{
-        transform: translateY(-5.5rem) !important;
+        transform: translateY(0rem) !important;
+        position: absolute;
+        bottom: 8%;
     }
 
 }
