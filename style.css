@@ -1,296 +1,323 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-    max-width: 100%;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  max-width: 100%;
 }
-.container{
-    padding: 15px;
-    text-align: left;
-    max-width: 460px;
-    margin: 0 auto;
-}
-
-.black{
-   font-weight: 900;
-}
-@media(min-width:375) and (max-width:799){
-    #name{
-        font-family: "Lalezar";
-        font-size:46px !important;
-        line-height: 46px !important;
-    }
+.container {
+  padding: 15px;
+  text-align: left;
+  max-width: 460px;
+  margin: 0 auto;
 }
 
-@media only screen and (orientation: portrait) and (max-width: 767px){
-    .fleurs{
-        transform: translateY(0rem) !important;
-        position: absolute;
-        bottom: 2%;
-    }
-    .redLine{
-        transform: translateY(0rem) !important;
-        position: absolute;
-        bottom: 1%;
-    }
-
+.black {
+  font-weight: 900;
+}
+@media (min-width: 375) and (max-width: 799) {
+  #name {
+    font-family: 'Lalezar';
+    font-size: 46px !important;
+    line-height: 46px !important;
+  }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px){
-
-    .fleur{
-        width: 4% !important;
-        margin-top: 15px !important;
-    }
-    .fleurs{
-        top: 85% !important;
-    }
-
-    .mainName{
-        font-size: 32px !important;
-    }
-    .secondaryName {
-        font-size: 16px !important;
-    }
-    .resumeTop {
-        font-size: 28px !important;
-    }
-    .resumeBot {
-        font-size: 32px !important;
-    }
-    .goldenCircle{
-        width: 80px !important;
-        height: 80px !important;
-        border-radius: 40px !important;
-    }
-}
-@media(min-width:800px){
-    #name{
-        font-family: "Lalezar";
-        font-size:66px !important;
-        line-height: 52px !important;
-    }
-}
-@media(min-width: 768px){
-    .redMain, .whiteMain{
-        min-height: 400px !important;
-    }
-
-    .top{
-        min-height: 800px !important;
-    }
-    .mainName{
-        font-size: 82px !important;
-    }
-    .secondaryName {
-        font-size: 78px !important;
-    }
-    .resumeTop {
-        font-size: 68px !important;
-    }
-    .resumeBot {
-
-        font-size: 82px !important;
-    }
-    .goldenCircle{
-        width: 150px !important;
-        height: 150px !important;
-        border-radius: 75px !important;
-    }
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+  .fleurs {
+    transform: translateY(0rem) !important;
+    position: absolute;
+    bottom: 2%;
+  }
+  .redLine {
+    transform: translateY(0rem) !important;
+    position: absolute;
+    bottom: 1%;
+  }
 }
 
-@media(min-width: 850px){
-    body{
-        display: flex;
-    }
-    .container{
-        align-self: center;
-    }
-    .top{
-        width: 50% !important;
-    }
-    .redLine{
-        transform: translateY(-5.5rem) !important;    
-    }
-    .fleurs{
-        transform: translateY(-6rem) !important;    
-    }
-   
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+  .fleur {
+    width: 4% !important;
+    margin-top: 15px !important;
+  }
+  .fleurs {
+    top: 85% !important;
+  }
+
+  .mainName {
+    font-size: 32px !important;
+  }
+  .secondaryName {
+    font-size: 16px !important;
+  }
+  .resumeTop {
+    font-size: 28px !important;
+  }
+  .resumeBot {
+    font-size: 32px !important;
+  }
+  .goldenCircle {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 40px !important;
+  }
 }
-#name{
-    font-family: "Lalezar";
-    font-size:42px;
-    line-height: 42px;
+@media (min-width: 800px) {
+  #name {
+    font-family: 'Lalezar';
+    font-size: 66px !important;
+    line-height: 52px !important;
+  }
 }
-.smBar{
-    margin: 0 auto;
-    height: 2px;
-    width: 100%;
-    background: black;
-    margin: 5px 0;
+@media (min-width: 768px) {
+  .redMain,
+  .whiteMain {
+    min-height: 400px !important;
+  }
+
+  .top {
+    min-height: 800px !important;
+  }
+  .mainName {
+    font-size: 82px !important;
+  }
+  .secondaryName {
+    font-size: 78px !important;
+  }
+  .resumeTop {
+    font-size: 68px !important;
+  }
+  .resumeBot {
+    font-size: 82px !important;
+  }
+  .goldenCircle {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 75px !important;
+  }
 }
 
-.medBar{
-    margin: 0 auto;
-    height: 5px;
-    width: 100%;
-    background: black;
-    margin: 5px 0; 
-}
-.thickBar{
-    margin: 0 auto;
-    height: 15px;
-    width: 100%;
-    background: black;
-    margin: 5px 0;
-
-}
-#clients{
-    text-align: left;
-    font-size: 18px;
-    font-weight: 100;
-}
-#codingSince{
+@media (min-width: 850px) {
+  body {
     display: flex;
-    justify-content: space-between;
+  }
+  .container {
+    align-self: center;
+  }
+  .top {
+    width: 50% !important;
+  }
+  .redLine {
+    transform: translateY(-5.5rem) !important;
+  }
+  .fleurs {
+    transform: translateY(-6rem) !important;
+  }
+}
+#name {
+  font-family: 'Lalezar';
+  font-size: 42px;
+  line-height: 42px;
+}
+.smBar {
+  margin: 0 auto;
+  height: 2px;
+  width: 100%;
+  background: black;
+  margin: 5px 0;
 }
 
-#codingFrom, #startYear{
-    font-size: 20px;
-    font-weight: bolder;
+.medBar {
+  margin: 0 auto;
+  height: 5px;
+  width: 100%;
+  background: black;
+  margin: 5px 0;
+}
+.thickBar {
+  margin: 0 auto;
+  height: 15px;
+  width: 100%;
+  background: black;
+  margin: 5px 0;
+}
+#clients {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 100;
+}
+#codingSince {
+  display: flex;
+  justify-content: space-between;
 }
 
-#calories{
-    display: flex;
-    justify-content: space-between;
-}
-.focusAmount{
-    display: flex;
-    margin-top: -20px;
-    justify-content: space-between;
+#codingFrom,
+#startYear {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-#hundo{
-    font-size: 55px;
-    margin-top: -12px;
+#calories {
+  display: flex;
+  justify-content: space-between;
+}
+.focusAmount {
+  display: flex;
+  margin-top: -20px;
+  justify-content: space-between;
 }
 
-#focus{
-    font-size: 48px;
-    font-weight: 500;
+#hundo {
+  font-size: 55px;
+  margin-top: -12px;
 }
 
-#dedicated{
-    text-align: left;
-    font-size: 24px;
-    font-weight: 500;
+#focus {
+  font-size: 48px;
+  font-weight: 500;
 }
 
-#proficiencyStat{
-    text-align: right;
+#dedicated {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.profPercent{
-    display: flex;
-    justify-content: space-between;
+#proficiencyStat {
+  text-align: right;
 }
 
-.indent{
-    padding-left: 20px;
+.profPercent {
+  display: flex;
+  justify-content: space-between;
 }
 
+.indent {
+  padding-left: 20px;
+}
 
 /* For the top of the page */
 
-.top{
-    height: 100vh;
-    width: 100%;
-    text-align: center;
+.top {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
 }
 
-.redMain{
-    height: 50vh;
-    background: #D2272F;
-    z-index: 5;
+.redMain {
+  height: 50vh;
+  background: #d2272f;
+  z-index: 5;
 }
 
-.whiteLine{
-    transform: translateY(20px);
-    width: 100%;
-    background: white;
-    height: 5px;
+.whiteLine {
+  transform: translateY(20px);
+  width: 100%;
+  background: white;
+  height: 5px;
 }
 
-
-
-.whiteMain{
-    height: 50vh;
-    background:white;
+.whiteMain {
+  height: 50vh;
+  background: white;
 }
 
-.mainName{
-    font-family: 'Pacifico';
-    font-size: 52px;
-    color: white;
-    text-shadow:4px 4px black;
+.mainName {
+  font-family: 'Pacifico';
+  font-size: 52px;
+  color: white;
+  text-shadow: 4px 4px black;
 }
-.secondaryName{
-    font-size: 28px;
-    color: white;
-}
-
-.name{
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    width: 100%;
-    height: 100%
+.secondaryName {
+  font-size: 28px;
+  color: white;
 }
 
-.goldenCircle{
-    height: 150px;
-    width: 150px;
-    border-radius: 80px;
-    background: goldenrod;
-    transform: translate(0%, -50%);
-    margin: 0 auto;
-
-}
-.resume{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    transform: translateY(-.5rem);
-}
-.resumeTop{
-    color:#D2272F;
-    font-size: 48px;
-}
-.resumeBot{
-    text-shadow: -2px 0 goldenrod, 0 2px goldenrod, 2px 0 goldenrod, 0 -2px goldenrod;
-    color:black;
-    font-size: 52px;
-    font-family: 'Source Serif Pro';
-} 
-
-.redLine{
-    width: 100%;
-    background: #D2272F;;
-    height: 5px;
-    transform: translateY(-3.5rem);
+.name {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.fleurs{
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    transform: translateY(-4rem);
+.goldenCircle {
+  height: 150px;
+  width: 150px;
+  border-radius: 80px;
+  background: goldenrod;
+  transform: translate(0%, -50%);
+  margin: 0 auto;
 }
-.fleur{
-    width: 7%;
-    height: 7%;
+.resume {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  transform: translateY(-0.5rem);
+}
+.resumeTop {
+  color: #d2272f;
+  font-size: 48px;
+}
+.resumeBot {
+  text-shadow: -2px 0 goldenrod, 0 2px goldenrod, 2px 0 goldenrod,
+    0 -2px goldenrod;
+  color: black;
+  font-size: 52px;
+  font-family: 'Source Serif Pro';
+}
+
+.redLine {
+  width: 100%;
+  background: #d2272f;
+  height: 5px;
+  transform: translateY(-3.5rem);
+}
+
+.fleurs {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-4rem);
+}
+.fleur {
+  width: 7%;
+  height: 7%;
+}
+@media (min-width: 850px) {
+  .linkToBlog {
+    right: 50% !important;
+  }
+}
+
+.linkToBlog:hover {
+  transition: 0.5s;
+  background: #d2272f;
+  border: white 5px solid;
+}
+.linkToBlog span:hover {
+  transition: 0.5s;
+
+  color: white;
+}
+.linkToBlog {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: white;
+  color: #d2272f;
+  border: 5px solid #d2272f;
+  text-decoration: none;
+  padding: 5px 15px;
+  z-index: 100;
+}
+
+.linkToBlog span {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #d2272f;
 }
