@@ -290,7 +290,7 @@ body {
 }
 @media (min-width: 850px) {
   .linkToBlog {
-    right: 50% !important;
+    right: 52% !important;
   }
 }
 
@@ -298,15 +298,12 @@ body {
   transition: 0.5s;
   background: #d2272f;
   border: white 5px solid;
-}
-.linkToBlog span:hover {
-  transition: 0.5s;
-
   color: white;
 }
+
 .linkToBlog {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 15px;
   background: white;
   color: #d2272f;
@@ -314,10 +311,4 @@ body {
   text-decoration: none;
   padding: 5px 15px;
   z-index: 100;
-}
-
-.linkToBlog span {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #d2272f;
 }
